@@ -1,0 +1,210 @@
+---
+title: "DeepMind Insights: How LLMs Actually Work for Distribution"
+description: "Drawing from Google DeepMind research on Gemini, an insider's perspective on how large language models retrieve, rank, and recommend financial services."
+image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2670&auto=format&fit=crop"
+date: "2024-12-01"
+authorName: "Pierre-Alexandre Kamienny"
+authorSrc: "/satsu-co-founder.png"
+---
+
+# DeepMind Insights: How LLMs Actually Work for Distribution
+
+During my time at Google DeepMind working on Gemini's information retrieval systems, I gained unique insight into how LLMs actually make recommendations. These insights are now powering Satsu's approach to financial services distribution.
+
+## The Retrieval-Augmented Generation Architecture
+
+When you ask ChatGPT or Gemini about financial services, the process is more complex than most people realize:
+
+### Stage 1: Query Understanding
+
+The model doesn't just parse your words—it infers:
+- **True intent** - What you're really trying to accomplish
+- **Risk tolerance** - Implicit signals about decision factors
+- **Context** - Life stage, financial situation, urgency
+- **Constraints** - Budget, timeline, requirements
+
+**Example:**
+"Best home insurance for young professionals in San Francisco"
+
+The model understands:
+- Urban location = earthquake risk
+- Young professional = price-sensitive, tech-savvy
+- "Best" = optimization across multiple factors
+- Implied constraints: digital-first, flexible, modern
+
+### Stage 2: Information Retrieval
+
+This is where most financial services companies lose:
+
+The model searches **20+ sources** but most content fails because:
+- **Gated information** - Can't access content behind forms
+- **Poor structure** - Can't parse complex layouts
+- **Outdated data** - De-prioritizes stale information
+- **Marketing speak** - Prefers factual, comparative content
+
+From my work on symbolic regression (283 citations, NeurIPS), I learned that models favor **structured, mathematical representations** of information. Financial services that provide this format win disproportionately.
+
+### Stage 3: Credibility Assessment
+
+The model evaluates each source across multiple dimensions:
+
+**Authority Signals:**
+- Domain reputation and age
+- SSL/security indicators
+- Regulatory mentions
+- Industry associations
+
+**Content Quality:**
+- Factual accuracy (verified against multiple sources)
+- Completeness (answers related questions)
+- Recency (timestamp and update patterns)
+- Consistency (no contradictions)
+
+**Trust Markers:**
+- Customer reviews (sentiment, not just volume)
+- Regulatory compliance statements
+- Clear terms and conditions
+- Transparent pricing
+
+### Stage 4: Synthesis and Ranking
+
+This is the black box most companies struggle with. From my multi-agent research (469 citations, NeurIPS), I understand this as a **consensus-building process**:
+
+Different "evaluation agents" assess:
+1. **Best fit agent** - Match to user's specific needs
+2. **Risk mitigation agent** - Safety of recommendation
+3. **Value optimization agent** - Price/feature balance
+4. **Practical feasibility agent** - Can user actually get this?
+
+**Only sources that satisfy all agents make the final recommendation.**
+
+## Why Financial Services is Unique
+
+### High Stakes = Conservative Recommendations
+
+LLMs are more cautious with financial services than other categories because:
+- **Regulatory consequences** - Wrong advice has serious implications
+- **User trust** - One bad recommendation breaks trust forever
+- **Verification difficulty** - Hard to fact-check financial claims
+
+This means traditional marketing approaches **actively hurt your chances**:
+- Hyperbole = red flag
+- Vague claims = filtered out
+- Hidden information = disqualified
+- Aggressive positioning = downranked
+
+### Comparative Analysis is Mandatory
+
+Unlike product recommendations where "best" is subjective, financial services recommendations MUST be defensible through comparison.
+
+The model asks:
+- Why this option vs named alternatives?
+- What trade-offs is the user making?
+- Which user types prefer which options?
+- What are the hidden costs or catches?
+
+If your content doesn't provide this comparative context, the model must infer it—usually to your disadvantage.
+
+## The Gemini Optimization Principles
+
+From my work improving Gemini for financial services applications, I identified three core principles:
+
+### 1. Verifiability
+
+Every claim must be:
+- Checkable against other sources
+- Timestamped and current
+- Specific rather than general
+- Attributed when appropriate
+
+### 2. Comprehensiveness
+
+Content must address:
+- The main question
+- Obvious follow-up questions
+- Edge cases and exceptions
+- Alternatives and trade-offs
+
+### 3. Accessibility
+
+Information must be:
+- Publicly available (no gating)
+- Parseable (structured data)
+- Maintained (regular updates)
+- Discoverable (proper markup)
+
+## Practical Application: The Satsu Framework
+
+At Satsu, we've translated these DeepMind insights into an operational framework:
+
+### Phase 1: Information Architecture
+
+**Audit:**
+- Can an LLM access your key information?
+- Is it structured for machine parsing?
+- Does it answer comparative questions?
+- Is it current and maintained?
+
+**Optimize:**
+- Expose critical data publicly
+- Add structured data markup
+- Create comparison-friendly formats
+- Implement regular update cycles
+
+### Phase 2: Credibility Building
+
+**Audit:**
+- What trust signals are present?
+- Are regulatory details visible?
+- Do customer reviews exist?
+- Is pricing transparent?
+
+**Optimize:**
+- Highlight compliance and licensing
+- Surface customer sentiment
+- Make terms and conditions clear
+- Show pricing with context
+
+### Phase 3: Competitive Positioning
+
+**Audit:**
+- How do you compare to named competitors?
+- What makes you different?
+- Which use cases favor you?
+- What trade-offs exist?
+
+**Optimize:**
+- Create explicit comparison content
+- Document differentiation clearly
+- Map products to use cases
+- Be honest about limitations
+
+## The Technical Edge
+
+Most financial services companies treat AI distribution as a marketing problem. It's actually a **technical problem** that requires:
+
+- Deep understanding of LLM architecture
+- Information retrieval expertise
+- Structured data implementation
+- Continuous measurement and optimization
+
+This is why Satsu's founding team combines:
+- Google DeepMind AI research (me)
+- Fintech founding and scaling experience
+- Deep financial services domain knowledge
+
+## What This Means for You
+
+If you're optimizing for ChatGPT using traditional marketing approaches, you're fighting against how these systems actually work.
+
+Success requires:
+1. **Technical understanding** - How do LLMs really function?
+2. **Structural optimization** - Make your information LLM-friendly
+3. **Credibility building** - Earn algorithmic trust
+4. **Continuous measurement** - Track actual impact
+
+The financial services companies that win in AI distribution will be those that understand the technology at a fundamental level—not those applying old marketing playbooks to new platforms.
+
+At Satsu, we're building the first true AI distribution intelligence platform for financial services, grounded in world-class AI research and real-world fintech experience.
+
+The future of distribution is technical. Are you ready?
